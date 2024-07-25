@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 const tenantsData = [
   { name: "John Doe", rentStatus: "Not Paid", paymentDate: "2022-01-01" },
@@ -49,7 +50,16 @@ const StatsPage: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="flex flex-col ">
+      <div className="navbar">
+        <Navbar
+          links={[
+            { href: "stats", label: "Stats" },
+            { href: "money", label: "Money" },
+            { href: "tickets", label: "Tickets" },
+          ]}
+        />
+      </div>
       <h1 className="text-2xl font-bold mb-4">Rent Status</h1>
       <table className="table-auto w-full">
         <thead>
