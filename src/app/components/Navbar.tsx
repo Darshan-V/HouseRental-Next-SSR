@@ -14,10 +14,10 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ links }) => {
   return (
     <nav className=" w-full flex   bg-sky-500">
-      <div className="flex items-center p-2">
+      <Link className="flex items-center p-2" href="/">
         <h1 className="text-2xl text-center ">SMB</h1>
         <RiHomeSmileFill size="28" />
-      </div>
+      </Link>
       <ul className="flex w-full flex-row justify-end gap-4 p-4">
         {links.map((link) => (
           <li key={link.href}>
