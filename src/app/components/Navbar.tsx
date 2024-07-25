@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { RiHomeSmileFill } from "react-icons/ri";
 
 interface LinkData {
   href: string;
@@ -12,8 +13,12 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ links }) => {
   return (
-    <nav className=" w-full flex  justify-end bg-sky-500">
-      <ul className="flex flex-row gap-4 p-4">
+    <nav className=" w-full flex   bg-sky-500">
+      <div className="flex items-center p-2">
+        <h1 className="text-2xl text-center ">SMB</h1>
+        <RiHomeSmileFill size="28" />
+      </div>
+      <ul className="flex w-full flex-row justify-end gap-4 p-4">
         {links.map((link) => (
           <li key={link.href}>
             <Link href={link.href}>{link.label}</Link>
