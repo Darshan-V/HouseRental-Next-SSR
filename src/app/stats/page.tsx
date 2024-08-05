@@ -54,13 +54,13 @@ const StatsPage: React.FC = () => {
       <div className="navbar">
         <Navbar
           links={[
-            { href: "stats", label: "Stats" },
+            { href: "stats", label: "Dues and Pays" },
             { href: "money", label: "Money" },
             { href: "tickets", label: "Tickets" },
           ]}
         />
       </div>
-      <h1 className="text-2xl font-bold mb-4">Rent Status</h1>
+      <h1 className="text-2xl font-bold mb-4">Rent Payments</h1>
       <table className="table-auto w-full">
         <thead>
           <tr>

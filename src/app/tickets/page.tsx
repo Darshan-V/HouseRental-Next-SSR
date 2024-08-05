@@ -43,7 +43,7 @@ const TicketsPage: React.FC = () => {
       <div className="navbar">
         <Navbar
           links={[
-            { href: "stats", label: "Stats" },
+            { href: "stats", label: "Dues and Pays" },
             { href: "money", label: "Money" },
             { href: "tickets", label: "Tickets" },
           ]}
