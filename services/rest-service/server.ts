@@ -1,4 +1,9 @@
-import express, { Request, Response, NextFunction, Express } from "express";
+import express, {
+  type Request,
+  type Response,
+  type NextFunction,
+  type Express,
+} from "express";
 const app: Express = express();
 
 app.use(express.json());
