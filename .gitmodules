@@ -1,0 +1,3 @@
+[submodule "api-services"]
+	path = services/api-services
+	url = https://github.com/Darshan-V/HouseRental-Next-SSR/tree/master/services
